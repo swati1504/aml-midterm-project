@@ -19,20 +19,3 @@ PART1_NOTES_FOR_REPORT.md         # numbers, methods & insights for the write-up
    (`cs-5785-midterm-2026-clinical-trial-reason-prediction.zip`). Alternatively, put the CSVs in `./data/`.
 3. Outputs land in `figures/` and `outputs/`.
 
-Kaggle data is **not** committed to the repo (competition rules).
-
-## Part 2 handoff: `midterm/outputs/part1_reason_labels_all_trials.csv`
-One row per Part 1 trial (1,561 rows).
-
-| column | meaning |
-|---|---|
-| `ID` | trial ID; **matches `trial_id` in the Part 2 outcome files** |
-| `start_year` | trial start year |
-| `label_source` | `true_train` (157) · `true_val` (78) · `predicted_train_unlabeled` (1,014) · `predicted_test` (312) |
-| `Safety, Funding, Efficacy, Recruitment, Other` | 0/1 reason labels (every row has ≥ 1) |
-| `p_<reason>` | predicted probability (empty for true-label rows) |
-
-For the Part 2 error analysis: join `outcome_val.csv` (label = 0 rows) on `trial_id == ID`. Trials with no match
-form the "no recorded stopping reason" group. A trial can count toward several reasons. Report which reasons
-are true (`true_*`) vs predicted (`predicted_*`). The spec says reason labels/embeddings must **not** be used
-as classifier inputs in Part 2, only for error analysis.
