@@ -1,0 +1,6 @@
+,Safety,Funding,Efficacy,Recruitment,Other
+labeled train (prior used in training),0.102,0.051,0.108,0.643,0.159
+val TRUE,0.115,0.051,0.179,0.641,0.128
+val EM-estimate,0.113,0.02,0.214,0.645,0.123
+unlabeled-train EM-estimate,0.099,0.014,0.148,0.697,0.13
+test EM-estimate,0.183,0.02,0.171,0.566,0.211
