@@ -1,0 +1,124 @@
+model,phase,F1,ROC_AUC,PR_AUC,LogLoss,n,group
+"LR per-phase, TF-IDF 1-2g, C=0.1",I,0.7347,0.7176,0.7952,0.6299,149,A
+"LR per-phase, TF-IDF 1-2g, C=0.1",II,0.6195,0.7129,0.6967,0.6219,501,A
+"LR per-phase, TF-IDF 1-2g, C=0.1",III,0.7992,0.7611,0.8691,0.5529,363,A
+"LR per-phase, TF-IDF 1-2g, C=0.3",I,0.734,0.7268,0.795,0.6109,149,A
+"LR per-phase, TF-IDF 1-2g, C=0.3",II,0.6106,0.7151,0.6969,0.6145,501,A
+"LR per-phase, TF-IDF 1-2g, C=0.3",III,0.7984,0.7666,0.8673,0.5407,363,A
+"LR per-phase, TF-IDF 1-2g, C=1",I,0.7143,0.7224,0.777,0.6101,149,A
+"LR per-phase, TF-IDF 1-2g, C=1",II,0.6201,0.7114,0.6923,0.6212,501,A
+"LR per-phase, TF-IDF 1-2g, C=1",III,0.7922,0.7581,0.8594,0.5467,363,A
+"LR per-phase, TF-IDF 1-2g, C=3",I,0.7222,0.7048,0.7607,0.6373,149,A
+"LR per-phase, TF-IDF 1-2g, C=3",II,0.6293,0.7055,0.6821,0.6513,501,A
+"LR per-phase, TF-IDF 1-2g, C=3",III,0.7946,0.7441,0.8464,0.5816,363,A
+"LR per-phase, TF-IDF unigram, C=0.3",I,0.734,0.7346,0.7979,0.6066,149,A
+"LR per-phase, TF-IDF unigram, C=0.3",II,0.6089,0.7183,0.6998,0.6122,501,A
+"LR per-phase, TF-IDF unigram, C=0.3",III,0.7914,0.7665,0.8627,0.5402,363,A
+"Multinomial NB per-phase, BoW, alpha=0.1",I,0.6364,0.6628,0.6982,3.8059,149,A
+"Multinomial NB per-phase, BoW, alpha=0.1",II,0.6285,0.6789,0.6159,4.0265,501,A
+"Multinomial NB per-phase, BoW, alpha=0.1",III,0.7862,0.7003,0.7779,3.3381,363,A
+"Multinomial NB per-phase, BoW, alpha=1.0",I,0.6667,0.6965,0.7307,3.4395,149,A
+"Multinomial NB per-phase, BoW, alpha=1.0",II,0.636,0.6739,0.6094,4.0795,501,A
+"Multinomial NB per-phase, BoW, alpha=1.0",III,0.7821,0.6971,0.7786,3.3407,363,A
+"kNN per-phase, TF-IDF cosine, k=15",I,0.6517,0.6697,0.7489,0.6303,149,A
+"kNN per-phase, TF-IDF cosine, k=15",II,0.5969,0.6807,0.6592,0.6463,501,A
+"kNN per-phase, TF-IDF cosine, k=15",III,0.8132,0.7586,0.8439,0.6615,363,A
+"kNN per-phase, TF-IDF cosine, k=50",I,0.7083,0.6653,0.7424,0.634,149,A
+"kNN per-phase, TF-IDF cosine, k=50",II,0.6005,0.7034,0.6887,0.622,501,A
+"kNN per-phase, TF-IDF cosine, k=50",III,0.8008,0.759,0.85,0.5713,363,A
+"kNN per-phase, TF-IDF cosine, k=100",I,0.7358,0.7061,0.7822,0.627,149,A
+"kNN per-phase, TF-IDF cosine, k=100",II,0.6027,0.6975,0.6812,0.6281,501,A
+"kNN per-phase, TF-IDF cosine, k=100",III,0.8069,0.7459,0.8461,0.5781,363,A
+"LR pooled (+phase one-hot), TF-IDF, C=0.3",I,0.7368,0.7217,0.7495,0.6118,149,A
+"LR pooled (+phase one-hot), TF-IDF, C=0.3",II,0.633,0.7282,0.6998,0.6064,501,A
+"LR pooled (+phase one-hot), TF-IDF, C=0.3",III,0.8166,0.7742,0.8657,0.5329,363,A
+HGB: phase + design,I,0.7033,0.6386,0.6788,0.659,149,C
+HGB: phase + design,II,0.6094,0.6736,0.64,0.6482,501,C
+HGB: phase + design,III,0.7721,0.7099,0.8393,0.5931,363,C
+HGB: phase + hist,I,0.7459,0.7499,0.7845,0.5853,149,C
+HGB: phase + hist,II,0.594,0.7007,0.6817,0.6252,501,C
+HGB: phase + hist,III,0.7938,0.7541,0.844,0.5523,363,C
+HGB: phase + design + hist,I,0.7692,0.7474,0.7661,0.5917,149,C
+HGB: phase + design + hist,II,0.6263,0.7175,0.679,0.6164,501,C
+HGB: phase + design + hist,III,0.8008,0.7481,0.8442,0.5533,363,C
+HGB: all dense (design+hist+tani+desc+act),I,0.7692,0.7313,0.7622,0.5979,149,C
+HGB: all dense (design+hist+tani+desc+act),II,0.6352,0.723,0.6981,0.6122,501,C
+HGB: all dense (design+hist+tani+desc+act),III,0.7907,0.7527,0.846,0.5478,363,C
+HGB: all dense − hist,I,0.6971,0.6759,0.6998,0.6348,149,C
+HGB: all dense − hist,II,0.64,0.6907,0.648,0.6393,501,C
+HGB: all dense − hist,III,0.7865,0.7208,0.8301,0.5794,363,C
+HGB: all dense − design,I,0.7458,0.7328,0.7701,0.6024,149,C
+HGB: all dense − design,II,0.5939,0.7077,0.6832,0.622,501,C
+HGB: all dense − design,III,0.7961,0.7509,0.845,0.552,363,C
+HGB: all dense − tani,I,0.7778,0.7355,0.7576,0.5955,149,C
+HGB: all dense − tani,II,0.641,0.7302,0.6943,0.6067,501,C
+HGB: all dense − tani,III,0.7836,0.752,0.8479,0.5496,363,C
+"HGB: all dense − drug chem (desc, act)",I,0.7735,0.7439,0.7745,0.5907,149,C
+"HGB: all dense − drug chem (desc, act)",II,0.6331,0.7269,0.6981,0.6108,501,C
+"HGB: all dense − drug chem (desc, act)",III,0.7901,0.7516,0.8478,0.5525,363,C
+HGB: all dense + text SVD-100,I,0.7362,0.755,0.7679,0.5928,149,C
+HGB: all dense + text SVD-100,II,0.6405,0.7382,0.7164,0.6005,501,C
+HGB: all dense + text SVD-100,III,0.7929,0.7711,0.8664,0.534,363,C
+HGB: all dense + 1024-bit fingerprints,I,0.7865,0.7588,0.7858,0.5798,149,C
+HGB: all dense + 1024-bit fingerprints,II,0.641,0.7242,0.6982,0.6088,501,C
+HGB: all dense + 1024-bit fingerprints,III,0.7786,0.7509,0.8572,0.5531,363,C
+HGB: all dense + Reactome pathways,I,0.7684,0.7561,0.7857,0.5832,149,C
+HGB: all dense + Reactome pathways,II,0.6327,0.7273,0.703,0.6072,501,C
+HGB: all dense + Reactome pathways,III,0.7923,0.7551,0.8534,0.5459,363,C
+HGB: all dense + K-Means(k=10) cluster rate,I,0.7609,0.7504,0.7894,0.584,149,C
+HGB: all dense + K-Means(k=10) cluster rate,II,0.6426,0.7356,0.7035,0.6031,501,C
+HGB: all dense + K-Means(k=10) cluster rate,III,0.7899,0.753,0.851,0.5476,363,C
+HGB: all dense + K-Means(k=25) cluster rate,I,0.7598,0.7414,0.7644,0.5965,149,C
+HGB: all dense + K-Means(k=25) cluster rate,II,0.6511,0.7237,0.6968,0.6117,501,C
+HGB: all dense + K-Means(k=25) cluster rate,III,0.7908,0.7487,0.8473,0.5519,363,C
+HGB: all dense + K-Means(k=50) cluster rate,I,0.7735,0.748,0.7753,0.584,149,C
+HGB: all dense + K-Means(k=50) cluster rate,II,0.6444,0.737,0.7068,0.6027,501,C
+HGB: all dense + K-Means(k=50) cluster rate,III,0.7882,0.7492,0.8473,0.5488,363,C
+"LR pooled: TF-IDF + dense (design,hist,tani,desc), C=0.1",I,0.7753,0.7529,0.7655,0.5913,149,C
+"LR pooled: TF-IDF + dense (design,hist,tani,desc), C=0.1",II,0.6253,0.7245,0.6956,0.609,501,C
+"LR pooled: TF-IDF + dense (design,hist,tani,desc), C=0.1",III,0.8075,0.7602,0.8511,0.5453,363,C
+"LR pooled: TF-IDF + dense (design,hist,tani,desc), C=0.3",I,0.7471,0.7406,0.755,0.596,149,C
+"LR pooled: TF-IDF + dense (design,hist,tani,desc), C=0.3",II,0.6307,0.7313,0.7024,0.6046,501,C
+"LR pooled: TF-IDF + dense (design,hist,tani,desc), C=0.3",III,0.8068,0.768,0.8568,0.5377,363,C
+"LR pooled: everything (TF-IDF+dense+fp+path+act), C=0.1",I,0.75,0.7472,0.7605,0.5929,149,C
+"LR pooled: everything (TF-IDF+dense+fp+path+act), C=0.1",II,0.6,0.7039,0.6801,0.6267,501,C
+"LR pooled: everything (TF-IDF+dense+fp+path+act), C=0.1",III,0.7864,0.7393,0.8439,0.5593,363,C
+"HGB all dense: lr=0.03, iters=300, leaves=15",I,0.7753,0.7441,0.7665,0.5873,149,D-hgb
+"HGB all dense: lr=0.03, iters=300, leaves=15",II,0.6379,0.731,0.7009,0.6061,501,D-hgb
+"HGB all dense: lr=0.03, iters=300, leaves=15",III,0.7845,0.7531,0.8507,0.5476,363,D-hgb
+"HGB all dense: lr=0.05, iters=300, leaves=15",I,0.7692,0.7313,0.7622,0.5979,149,D-hgb
+"HGB all dense: lr=0.05, iters=300, leaves=15",II,0.6352,0.723,0.6981,0.6122,501,D-hgb
+"HGB all dense: lr=0.05, iters=300, leaves=15",III,0.7907,0.7527,0.846,0.5478,363,D-hgb
+"HGB all dense: lr=0.05, iters=600, leaves=15",I,0.7403,0.7202,0.7537,0.6147,149,D-hgb
+"HGB all dense: lr=0.05, iters=600, leaves=15",II,0.6203,0.705,0.6819,0.6312,501,D-hgb
+"HGB all dense: lr=0.05, iters=600, leaves=15",III,0.7773,0.7519,0.8523,0.5511,363,D-hgb
+"HGB all dense: lr=0.1, iters=150, leaves=31",I,0.7458,0.7171,0.7557,0.6085,149,D-hgb
+"HGB all dense: lr=0.1, iters=150, leaves=31",II,0.617,0.7111,0.6893,0.6214,501,D-hgb
+"HGB all dense: lr=0.1, iters=150, leaves=31",III,0.7756,0.7412,0.8483,0.562,363,D-hgb
+"HGB all dense: lr=0.05, iters=300, leaves=7",I,0.764,0.7312,0.7568,0.5955,149,D-hgb
+"HGB all dense: lr=0.05, iters=300, leaves=7",II,0.6141,0.7293,0.6998,0.6061,501,D-hgb
+"HGB all dense: lr=0.05, iters=300, leaves=7",III,0.7869,0.7483,0.84,0.552,363,D-hgb
+Platt-calibrated original (LR per-phase),I,0.7312,0.7268,0.795,0.6068,149,D-stack
+Platt-calibrated original (LR per-phase),II,0.6096,0.7151,0.6969,0.6141,501,D-stack
+Platt-calibrated original (LR per-phase),III,0.7922,0.7666,0.8673,0.539,363,D-stack
+"Stack(LR-pool, HGB)",I,0.7543,0.7572,0.7678,0.586,149,D-stack
+"Stack(LR-pool, HGB)",II,0.6348,0.7407,0.7174,0.5957,501,D-stack
+"Stack(LR-pool, HGB)",III,0.7962,0.7782,0.867,0.5286,363,D-stack
+"Stack(LR-pool, HGB) + year trend",I,0.7543,0.7572,0.7678,0.5863,149,D-stack
+"Stack(LR-pool, HGB) + year trend",II,0.6348,0.7404,0.7176,0.5958,501,D-stack
+"Stack(LR-pool, HGB) + year trend",III,0.7969,0.7775,0.8713,0.5325,363,D-stack
+Stack(all 5 bases),I,0.7709,0.757,0.7901,0.5837,149,D-stack
+Stack(all 5 bases),II,0.6478,0.7402,0.7212,0.5957,501,D-stack
+Stack(all 5 bases),III,0.7954,0.7839,0.8753,0.5226,363,D-stack
+Stack(all 5 bases) + year trend,I,0.7709,0.7577,0.7898,0.5839,149,D-stack
+Stack(all 5 bases) + year trend,II,0.6449,0.7399,0.7209,0.5958,501,D-stack
+Stack(all 5 bases) + year trend,III,0.7953,0.7832,0.8757,0.526,363,D-stack
+HGB: all dense + SVD + prior-phase history,I,0.7719,0.7581,0.7682,0.5882,149,D2
+HGB: all dense + SVD + prior-phase history,II,0.632,0.7294,0.706,0.6098,501,D2
+HGB: all dense + SVD + prior-phase history,III,0.7873,0.7663,0.8669,0.5383,363,D2
+LR pooled: TF-IDF + dense + prior-phase history,I,0.7889,0.7483,0.7774,0.5892,149,D2
+LR pooled: TF-IDF + dense + prior-phase history,II,0.6291,0.7309,0.703,0.6053,501,D2
+LR pooled: TF-IDF + dense + prior-phase history,III,0.8038,0.766,0.8533,0.5382,363,D2
+"LR per-phase, class-balanced",I,0.7059,0.7261,0.7944,0.6194,149,D2
+"LR per-phase, class-balanced",II,0.6157,0.715,0.6961,0.6158,501,D2
+"LR per-phase, class-balanced",III,0.7719,0.7669,0.8678,0.5687,363,D2

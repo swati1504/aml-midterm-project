@@ -1,0 +1,5 @@
+,0
+dense incl. history encodings,0.9733
+dense without history encodings,0.7815
+TF-IDF text (LR),0.8567
+"CONTROL train vs val, history only",0.9721
